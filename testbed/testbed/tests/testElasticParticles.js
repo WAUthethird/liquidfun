@@ -111,7 +111,7 @@ function TestElasticParticles() {
   box.SetAsBoxXY(1, 0.5);
   pgd.flags = b2_elasticParticle;
   pgd.groupFlags = b2_solidParticleGroup;
-  pgd.position.Set(1, 0);
+  pgd.position.Set(1, 5);
   pgd.angle = -0.5;
   pgd.angularVelocity = 2;
   pgd.shape = box;
@@ -123,7 +123,7 @@ function TestElasticParticles() {
   box.SetAsBoxXY(1, 0.5);
   pgd.flags = b2_elasticParticle;
   pgd.groupFlags = b2_solidParticleGroup;
-  pgd.position.Set(1, -1);
+  pgd.position.Set(1, 6);
   pgd.angle = -0.5;
   pgd.angularVelocity = 2;
   pgd.shape = box;

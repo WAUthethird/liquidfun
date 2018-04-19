@@ -36,7 +36,7 @@ function TestParticles() {
   // one group
   var circle = new b2CircleShape();
   circle.position.Set(0, 3);
-  circle.radius = 10;
+  circle.radius = 2;
   var pgd = new b2ParticleGroupDef();
   pgd.shape = circle;
   pgd.color.Set(255, 0, 0, 255);

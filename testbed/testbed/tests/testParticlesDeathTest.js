@@ -30,7 +30,7 @@ function TestParticles() {
 
 
   var psd = new b2ParticleSystemDef();
-  psd.radius = 0.1;
+  psd.radius = 0.035;
   var particleSystem = world.CreateParticleSystem(psd);
 
   // one group

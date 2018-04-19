@@ -7,4 +7,4 @@ LiquidFun Edited! Version [0.3][]
 
 LiquidFun Edited! is an edit of Google's 2D physics engine for games.
 
-I've added some cool tests to play around with in your browser! Check them all out here: https://wauthethird.github.io/liquidfun/testbed/index.html
+I've added some cool tests to play around with in your browser! Check them all out here: https://wauthethird.github.io/liquidfun-edited/testbed/index.html

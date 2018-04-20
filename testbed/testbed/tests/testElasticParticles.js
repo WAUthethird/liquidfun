@@ -117,19 +117,7 @@ function TestElasticParticles() {
   pgd.shape = box;
   pgd.color.Set(0, 0, 255, 255);
   particleSystem.CreateParticleGroup(pgd);
-  
-  var box = new b2PolygonShape();
-  var pgd = new b2ParticleGroupDef();
-  box.SetAsBoxXY(1, 0.5);
-  pgd.flags = b2_elasticParticle;
-  pgd.groupFlags = b2_solidParticleGroup;
-  pgd.position.Set(1, 6);
-  pgd.angle = -0.5;
-  pgd.angularVelocity = 2;
-  pgd.shape = box;
-  pgd.color.Set(0, 0, 255, 255);
-  particleSystem.CreateParticleGroup(pgd);
-  
+
   // circle
   bd = new b2BodyDef();
   var circle = new b2CircleShape();

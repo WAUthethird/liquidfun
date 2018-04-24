@@ -6,7 +6,7 @@ function TestChain() {
   edge.Set(new b2Vec2(-40, 0), new b2Vec2(40, 0));
   ground.CreateFixtureFromShape(edge, 0);
 
-  var y = 100;
+  var y = 25;
   var prevBody = ground;
   for (var i = 0; i < 30; i++) {
     var jd = new b2RevoluteJointDef();

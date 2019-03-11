@@ -33,6 +33,16 @@ function TestNoFunHere() {
   psd.radius = 0.035;
   var particleSystem = world.CreateParticleSystem(psd);
   
+  var circle = new b2CircleShape();
+  circle.position.Set(0, 3);
+  circle.radius = 0.5;
+  var pgd = new b2ParticleGroupDef();
+  pgd.flags = b2_springParticle;
+  pgd.groupFlags = b2_solidParticleGroup;
+  pgd.shape = circle;
+  pgd.color.Set(255, 0, 0, 255);
+  particleSystem.CreateParticleGroup(pgd);
+  
   var box = new b2PolygonShape();
   var pgd = new b2ParticleGroupDef();
   box.SetAsBoxXY(2, 1);

@@ -44,4 +44,12 @@ function TestNoFunHere() {
   pgd.shape = box;
   pgd.color.Set(0, 0, 255, 255);
   particleSystem.CreateParticleGroup(pgd);
+  
+  bd = new b2BodyDef();
+  var circle = new b2CircleShape();
+  bd.type = b2_dynamicBody;
+  var body = world.CreateBody(bd);
+  circle.position.Set(0, 8);
+  circle.radius = 0.5;
+  body.CreateFixtureFromShape(circle, 0.5);
 }

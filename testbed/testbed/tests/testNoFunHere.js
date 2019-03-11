@@ -43,13 +43,13 @@ function TestNoFunHere() {
   pgd.color.Set(255, 0, 0, 255);
   particleSystem.CreateParticleGroup(pgd);
   
-  circle = new b2CircleShape();
+  var circle = new b2CircleShape();
   circle.position.Set(-1, 3);
   circle.radius = 0.5;
-  pgd = new b2ParticleGroupDef();
+  var pgd = new b2ParticleGroupDef();
   pgd.groupFlags = b2_rigidParticleGroup | b2_solidParticleGroup;;
   pgd.shape = circle;
-  pgd.color.Set(0, 255, 0, 255);
+  pgd.color.Set(255, 0, 0, 255);
   particleSystem.CreateParticleGroup(pgd);
   
   var box = new b2PolygonShape();

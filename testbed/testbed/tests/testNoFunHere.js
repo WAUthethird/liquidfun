@@ -35,7 +35,7 @@ function TestNoFunHere() {
   
   var box = new b2PolygonShape();
   var pgd = new b2ParticleGroupDef();
-  box.SetAsBoxXY(1, 0.5);
+  box.SetAsBoxXY(2, 1);
   pgd.flags = b2_elasticParticle;
   pgd.groupFlags = b2_solidParticleGroup;
   pgd.position.Set(1, 4);
